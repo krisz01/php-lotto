@@ -19,6 +19,7 @@
                 }
             }
             var_dump($tomb);
+            echo "Ez volt a számtömb";
             echo "Itt már a php script fut";
         // put your code here
         ?>
