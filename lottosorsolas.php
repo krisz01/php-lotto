@@ -29,8 +29,9 @@ class lottosorsolas {
     return $tomb;
     //var_dump($tomb);
     }
-    function lottoszelveny($sorsolt)
+    function lottoszelveny()
      {
+        $sorsolt=$this->sorsolas();
         echo '<table border="1">';
 	for($i=1; $i<=$this->szamokszama; $i++)
 	{   
@@ -49,7 +50,7 @@ class lottosorsolas {
 		echo "<td bgcolor=\"$hatterszin\">";
 			echo $i;
 		echo "</td>";
-		if($i%$oszlop==0)
+		if($i%$this->oszlop==0)
 		{
 			echo "</tr>\n";
 		}
